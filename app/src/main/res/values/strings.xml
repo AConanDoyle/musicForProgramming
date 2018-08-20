@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Strings related to Settings -->
+    <string-array name="pref_language_items">
+        <item name="language_german">Deutsch</item>
+        <item name="language_english">English</item>
+    </string-array>
+
+    <!-- App- and Activity-names -->
+    <string name="app_name">musicForProgramming</string>
+    <string name="activity_settings">Einstellungen</string>
+
+    <!-- Strings related to layouts -->
+    <string name="function_function">function</string>
+
+    <!-- Strings related to preferences -->
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_about">Über</string>
+    <string name="pref__key_language" translatable="false">language</string>
+    <string name="pref_lable_language">Sprache</string>
+
+    <!-- Strings related to alerts and snakebars -->
+    <string name="alert_title">Vorsicht</string>
+    <string name="alert_message">Das Streaming via Mobilnetz kann Ihr Datenvolumen belasten!</string>
+    <string name="alert_ok">OK</string>
+    <string name="stopped_playback">Playback stopped</string>
+    <string name="pause">Pause</string>
+    <string name="coming_soon">coming soon ... </string>
+    <string name="resume">Resume</string>
+    <string name="fast_forward">+ 30 seconds</string>
+    <string name="rewind">- 30 seconds</string>
+
+</resources>

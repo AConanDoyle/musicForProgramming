@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="magnesia.mapapps.de.musicforprogramming.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:backgroundTint="@color/colorPrimary"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/colorPrimary"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/collapsingtoolbar">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimary"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:id="@+id/tvfunction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="'Conso', Courier New, monospace"
+                    android:paddingBottom="@dimen/row_padding_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_space"
+                    android:paddingTop="@dimen/row_padding_vertical"
+                    android:text="@string/function_function"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/tvprogramming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/tvfunction"
+                    android:fontFamily="'Conso', Courier New, monospace"
+                    android:paddingBottom="@dimen/row_padding_vertical"
+                    android:paddingRight="@dimen/activity_horizontal_space"
+                    android:paddingTop="@dimen/row_padding_vertical"
+                    android:text="@string/app_name"
+                    android:textColor="#a6e22e"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvbrackets_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tvprogramming"
+                    android:fontFamily="'Conso', Courier New, monospace"
+                    android:paddingBottom="@dimen/row_padding_vertical"
+                    android:paddingTop="@dimen/row_padding_vertical"
+                    android:text="("
+                    android:textSize="18sp" />
+
+                <!--                <TextView
+                                    android:id="@+id/tvtask"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toEndOf="@+id/tvbrackets_1"
+                                    android:fontFamily="'Conso', Courier New, monospace"
+                                    android:paddingBottom="@dimen/row_padding_vertical"
+                                    android:paddingTop="@dimen/row_padding_vertical"
+                                    android:text="@string/function_task"
+                                    android:textColor="#fd971f"
+                                    android:textSize="18sp"
+                                    android:textStyle="italic" />-->
+
+                <TextView
+                    android:id="@+id/tvbrackets_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/tvbrackets_1"
+                    android:fontFamily="'Conso', Courier New, monospace"
+                    android:paddingBottom="@dimen/row_padding_vertical"
+                    android:paddingRight="@dimen/activity_horizontal_space"
+                    android:paddingTop="@dimen/row_padding_vertical"
+                    android:text=")"
+                    android:textSize="18sp" />
+
+                <!--<TextView
+                    android:id="@+id/tvcurlybrackets_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvfunction"
+                    android:fontFamily="'Conso', Courier New, monospace"
+                    android:paddingBottom="@dimen/row_padding_vertical"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_space"
+                    android:paddingTop="10dp"
+                    android:text="{"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvdots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/tvcurlybrackets_2"
+                    android:layout_alignBottom="@+id/tvcurlybrackets_2"
+                    android:layout_toEndOf="@+id/tvcurlybrackets_1"
+                    android:background="#ae81ff"
+                    android:fontFamily="'Conso', Courier New, monospace"
+                    android:paddingTop="10dp"
+                    android:text="..."
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvcurlybrackets_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvfunction"
+                    android:layout_toEndOf="@+id/tvdots"
+                    android:fontFamily="'Conso', Courier New, monospace"
+                    android:paddingBottom="@dimen/row_padding_vertical"
+                    android:paddingTop="10dp"
+                    android:text="}"
+                    android:textSize="18sp" />-->
+
+            </RelativeLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <include
+        android:id="@+id/contentmain"
+        layout="@layout/content_main"
+        app:layout_anchor="@+id/fab_ff"
+        app:layout_anchorGravity="right|center" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginBottom="@dimen/fab_margin"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="mini"
+        app:useCompatPadding="true"
+        app:layout_anchor="@+id/fab_rew"
+        app:layout_anchorGravity="center_horizontal|right"
+        app:srcCompat="@android:drawable/ic_media_ff" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_rew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginBottom="@dimen/fab_margin"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="mini"
+        app:useCompatPadding="true"
+        app:layout_anchor="@+id/fab_play"
+        android:layout_gravity="top|center_horizontal"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_anchor="@id/contentmain"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
+</android.support.design.widget.CoordinatorLayout>
